@@ -1,4 +1,4 @@
-from django.conf.urls import url , path
+from django.conf.urls import url 
 
 from . import views
 
@@ -7,7 +7,7 @@ urlpatterns = [
     url('movies',
          views.MovieList.as_view(),
          name='MovieList'),
-    path('movie/<int:pk>',
+    url('movie/<int:pk>',
         views.MovieDetail.as_view(),
         name='MovieDetail'),
 ]
