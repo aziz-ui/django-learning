@@ -8,6 +8,6 @@ urlpatterns = [
          views.MovieList.as_view(),
          name='MovieList'),
     url('movie/<int:pk>',
-        view.MovieDetail.as_viex(),
+        views.MovieDetail.as_viex(),
         name='MovieDetail'),
 ]
