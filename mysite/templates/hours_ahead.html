@@ -1,15 +1,8 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
-<html lang="en">
+{% extends "base.html" %}
 
-<head>
-    <title>Future time</title>
-</head>
+{% block title %}Future time{% endblock %}
 
-<body>
-    <h1>My helpful timestamp site</h1>
-    <p>In {{ hour_offset }} hour(s), it will be {{ next_time }}.</p>
+{% block content %}
 
-    <hr>
-    <p>Thanks for visiting my site.</p>
-</body>
-</html>
+<p>In {{ hour_offset }} hour(s), it will be {{ next_time }}.</p>
+{% endblock %} 
