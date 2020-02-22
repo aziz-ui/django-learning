@@ -7,7 +7,7 @@ urlpatterns = [
     url('movies',
          views.MovieList.as_view(),
          name='MovieList'),
-    url('movies/<int:pk>',
+    url('movie/<int:pk>',
         views.MovieDetail.as_view(),
         name='MovieDetail'),
 ]
