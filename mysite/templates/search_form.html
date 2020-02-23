@@ -3,10 +3,18 @@
 {% block title %}Search{% endblock %}
 
 {% block content %}
-{% if error %}
+{% if errors %}
+    <p style="color: red;">
+      <ul>
 
-    <p style="color: red;">Please submit a search term.</p>
+          {% for error in errors %}
 
+          <li style="color: red;">{{ error }}</li>
+
+          {% endfor %}
+
+      </ul>
+    </p>
 {% endif %}
 <form action="" method="get">
     <input type="text" name="q">
